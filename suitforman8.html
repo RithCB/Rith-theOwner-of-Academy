@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Man- Product- Suit</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="icon"  type="x-icon" href="assets/images/search bar logo.jpeg">
+<!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+    </head>
+   
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="assets/images/academy.png"  style="width: 246px; margin-left: 5%; margin-bottom:30px; background-color:black; padding:2px; border-radius: 20px; filter:brightness(97%) ">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="http://127.0.0.1:3000/INDEX1.html" class="active">ទំព័រដើម</a></li>
+                           
+                            <li><a href="http://127.0.0.1:3000/products-Man1.html">បុរស</a></li>
+                            <li><a href="http://127.0.0.1:3000/Product-Boy-suit.html">កុមារ</a></li>
+                            <li><a href="http://127.0.0.1:3000/Woman.html">ស្រ្តី</a></li>
+                            <li class="scroll-to-section"><a href="#">ស្វែងយល់បន្ថែម</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+  
+    <br><br>    <br>    <br><br><br>
+    
+    <!-- ***** Header Area End ***** -->
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+    
+      
+    
+        nav {
+          display: flex;
+          justify-content: center;
+          background-color: #444;
+          padding: 1em;
+        }
+    
+        nav a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 1em;
+          font-weight: bold;
+          font-size: 1.2em;
+          transition: color 0.3s ease;
+        }
+    
+        nav a:hover {
+          color: #ffd700; /* Change color on hover */
+        }
+    
+        #featured-product {
+          max-width: 800px;
+          margin: 2em auto;
+          background-color: #fff;
+          padding: 2em;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          border-radius: 8px;
+        }
+    
+        #featured-product img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 1em;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        #featured-product h2 {
+          color: #333;
+          font-size: 1.5em;
+          margin-bottom: 0.5em;
+        }
+    
+        #featured-product p {
+          color: #666;
+          line-height: 1.6;
+        }
+    
+        #product-price {
+          color: #333;
+          font-size: 1.2em;
+          margin-top: 0;
+        }
+    
+        button {
+          padding: 10px 20px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+          background-color: #555;
+        }
+    
+        #product-details-modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .modal-content {
+          background-color: #fff;
+          max-width: 600px;
+          padding: 20px;
+          border-radius: 8px;
+          text-align: left;
+          position: relative;
+          animation: fadeIn 0.3s ease;
+        }
+    
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+    
+        .modal-input {
+          width: 60px;
+          padding: 5px;
+          margin-right: 10px;
+        }
+    
+        .confirm-btn {
+          margin-top: 15px;
+          background-color: #5cb85c;
+        }
+    
+        .confirm-btn:hover {
+          background-color: #4cae4c;
+        }
+    
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      
+    
+     
+    
+   
+    
+      <div id="featured-product">
+        <h2 id="product-name">ទំនិញដែលអ្នកបានជ្រើសរើស</h2>
+        <img src="assets/images/suit VIII.png" alt="Featured Product" id="product-image" style="width: 60%; height:80%; ">
+        <p id="product-description"></p>
+        <p id="product-price">តម្លៃ: $200</p>
+        <button onclick="openModal()">ទិញឥលូវនេះ</button>
+      </div>
+    
+      <!-- Product Details Modal -->
+      <div id="product-details-modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2 id="modal-product-name"></h2>
+          <img src="assets/images/suit VIII.png" alt="Featured Product" id="modal-product-image" style="width: 60%; height:80%; ">
+          <p id="modal-product-description"></p>
+          <p id="modal-product-price"></p>
+          <label for="quantity">ចំនួន:</label>
+          <input type="number" id="quantity" class="modal-input" value="1" min="1" max="10">
+          <p>តម្លៃសរុប: $<span id="total-price">200</span></p>
+          <button class="confirm-btn" onclick="confirmPurchase()">បញ្ជាក់ការទិញរបស់អ្នក</button>
+        </div>
+      </div>
+    
+      <script>
+        const product = {
+          name: "ឈុត Wool Pale brown",
+          image: "assets/images/suit VIII.png" ,
+          description: "ឈុតអាវធំនៅក្នុងរឿង Peaky Blinder",
+          price: 200,
+        }
+    
+        function updateProductDetails() {
+          document.getElementById('product-name').innerText = product.name;
+          document.getElementById('product-image').src = product.image;
+          document.getElementById('product-description').innerText = product.description;
+          document.getElementById('product-price').innerText = `Price: $${product.price.toFixed(2)}`;
+    
+          document.getElementById('modal-product-name').innerText = product.name;
+          document.getElementById('modal-product-image').src = product.image;
+          document.getElementById('modal-product-description').innerText = product.description;
+          document.getElementById('modal-product-price').innerText = `Price: $${product.price.toFixed(2)}`;
+        }
+    
+        function openModal() {
+          updateProductDetails();
+          document.getElementById('product-details-modal').style.display = 'flex';
+          updateTotalPrice(); // Initial update for total price
+          preventDefault();
+        }
+    
+        function closeModal() {
+          document.getElementById('product-details-modal').style.display = 'none';
+          preventDefault();
+        }
+    
+        function updateTotalPrice() {
+          const quantity = parseInt(document.getElementById('quantity').value);
+          const totalPrice = product.price * quantity;
+          document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+        }
+    
+        function confirmPurchase() {
+          const quantity = parseInt(document.getElementById('quantity').value);
+          const totalPrice = product.price * quantity;
+          alert(`អរគុណសម្រប់ការទិញរបស់អ្នកជូនពរសំណាងល្អ!\n\nProduct: ${product.name}\nQuantity: ${quantity}\nTotal Price: $${totalPrice.toFixed(2)}`);
+          closeModal();
+        }
+      </script>
+    
+
+
+    
+
+
+<!-- ***** Footer Start ***** -->
+<br><br>    <br>    
+
+<footer id="footer" style="width:100%; size:100%;    ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="first-item">
+                    <div class="logo">
+                        <img src="assets/images/academy.png" style="width: 246px; margin-right:8px; background-color:black; padding:2px; border-radius: 20px; filter:brightness(60%); filter:saturate(-9%) " alt="hexashop ecommerce templatemo">
+                    </div>
+                    <ul>
+                        <li><a href="#">ទីតាំង: រាជធានីភ្នំពេញ, ប្រទេសកម្ពុជា </a></li>
+                        <li><a href="#">អុីម៉ែល: Academy2024@company.com</a></li>
+                        <li><a href="#">លេខទូរស័ព្ទ: 023-990-000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4>ប្រភេទនៃទំនិញ</h4>
+                <ul>
+                    <li><a href="#">បុរស</a></li>
+                    <li><a href="#">កុមារ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>ដំណរភ្ជាប់link</h4>
+                <ul>
+                    <li><a href="#">ទំព័រដើម</a></li>
+                    <li><a href="#">អំពីពួកយើង</a></li>
+                    <li><a href="#">ជំនួយ</a></li>
+                    <li><a href="#">ទាក់ទងពួកយើង</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Help &amp; Information</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Tracking ID</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-12">
+                <div class="under-footer">
+                    <p>Copyright © 2024 Academy online shop  Co., Ltd. All Rights Reserved. 
+                    
+                    <br>Design: <a href="#" target="_parent" title="free css templates">Soeun Sovannarith</a></p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section style="background-color:rgb(20, 19, 19); text-align:center; color:white; width:100%"> Copyright © 2024; Conducted by: Soeun Sovannarith </section>
+    
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
